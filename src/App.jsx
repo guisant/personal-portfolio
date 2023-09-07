@@ -1,12 +1,11 @@
-import Container from '@mui/material'
 import ButtonAppBar from './components/ButtonAppBar'
 
 function App() {
   return (
     <>
-    <Container>
+    <div>
         <ButtonAppBar />
-    </Container>
+    </div>
     </>
   )
 }
