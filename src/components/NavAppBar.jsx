@@ -50,7 +50,7 @@ export default function NavAppBar(props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <AppBar component="nav" sx={{ bgcolor: '#121212' }}>
-        <Toolbar>
+        <Toolbar sx={{ mt: 1 }}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -69,7 +69,7 @@ export default function NavAppBar(props) {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' }, pr: 10 }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff', fontFamily: 'Rubik' }}>
+              <Button key={item} sx={{ color: '#fff' }}>
                 {item}
               </Button>
             ))}
