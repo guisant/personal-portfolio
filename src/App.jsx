@@ -2,6 +2,7 @@ import NavAppBar from './components/NavAppBar'
 import BannerHome from './components/BannerHome'
 import { ThemeProvider } from '@mui/material/styles'
 import theme from './styles/theme'
+import AboutMe from './components/aboutMe'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         </header>
         <main>
           <BannerHome />
+          <AboutMe />
         </main>
     </ThemeProvider>
     </>
