@@ -7,7 +7,12 @@ import ButtonsHome from './ButtonsHome';
 
 export default function BannerHome() {
     return (
-            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-around', mt: 15 }}>
+            <Box sx={{ 
+                display: { xs: 'block', sm: 'flex' }, 
+                alignItems: 'center', 
+                justifyContent: 'space-around', 
+                mt: 15 
+            }}>
                 <Box>
                     <Box>
                         <Typography variant="h6">
