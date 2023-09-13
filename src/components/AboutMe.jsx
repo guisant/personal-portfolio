@@ -1,19 +1,31 @@
 import { 
     Box,
+    Card,
+    CardMedia,
     Typography
 } from '@mui/material';
+import profilePic from '../assets/profile_pic.jpg'
 
 export default function AboutMe() {
     return (
             <Box sx={{ 
                 display: { xs: 'block', sm: 'flex' }, 
                 alignItems: 'center', 
-                justifyContent: 'space-around' 
+                justifyContent: 'space-around', 
+                backgroundColor: '#151515',
+                py: 10
             }}>
-                <Box>
-                    foto
+                <Box sx={{ ml: 13, my: 3 }}> 
+                    <Card sx={{ width: 250 }}>
+                        <CardMedia
+                            sx={{ height: 250, width: 250 }}
+                            component="img"
+                            src={profilePic}
+                            alt="profile picture"
+                        />
+                    </Card>
                 </Box>
-                <Box>
+                <Box sx={{ mx: 20, pl: 5 }}>
                     <Box>
                         <Typography>
                             SOBRE MIM
