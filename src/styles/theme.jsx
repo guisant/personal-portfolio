@@ -1,13 +1,28 @@
 import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 900,
+      lg: 1200,
+      xl: 1536,
+    },
+  },
+
+  //font
     typography: {
-        button: {
-          fontFamily: "'Rubik', sans-serif",
-          fontWeight: 400,
-          textTransform: 'capitalize',
-        },
+      fontFamily: [
+        "'Rubik', sans-serif",
+      ],
+      button: {
+        fontWeight: 400,
+        textTransform: 'capitalize',
       },
+    },
+
+  //paleta
     palette: {
       primary: {
         main: '#121212',
@@ -17,5 +32,26 @@ const theme = createTheme({
       },
     },
 });
+
+
+theme.typography.h6 = {
+  fontSize: '1rem',
+  '@media (min-width:600px)': {
+    fontSize: '1.3rem',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: '1.5rem',
+  },
+};
+
+theme.typography.h3 = {
+  fontSize: '2rem',
+  '@media (min-width:600px)': {
+    fontSize: '1.3rem',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: '3.2rem',
+  },
+};
 
 export default theme
