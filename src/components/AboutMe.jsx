@@ -4,6 +4,7 @@ import {
     CardMedia,
     Typography
 } from '@mui/material';
+import ButtonsAboutMe from './ButtonsAboutMe'
 import profilePic from '../assets/profile_pic.jpg'
 
 export default function AboutMe() {
@@ -13,9 +14,10 @@ export default function AboutMe() {
                 alignItems: 'center', 
                 justifyContent: 'space-around', 
                 backgroundColor: '#151515',
-                py: 10
+                pt: { xs: 7, sm: 3 },
+                pb: { xs: 7, sm: 10 }
             }}>
-                <Box sx={{ ml: 13, my: 3 }}> 
+                <Box sx={{ ml: 13, mt: 3, display: { xs: 'none', sm: 'flex' } }}> 
                     <Card sx={{ width: 250 }}>
                         <CardMedia
                             sx={{ height: 250, width: 250 }}
@@ -25,25 +27,29 @@ export default function AboutMe() {
                         />
                     </Card>
                 </Box>
-                <Box sx={{ mx: 20, pl: 5 }}>
+                <Box sx={{ px: { xs: 4, sm: 20 } }}>
                     <Box>
-                        <Typography>
+                        <Typography variant='h4' sx={{ pt: { sm: 8 }, pb: { xs: 2, sm: 3 } }}>
                             SOBRE MIM
                         </Typography>
-                        <Typography>SUBTITLE</Typography>
-                        <Typography>
+                        <Typography variant='h5' sx={{ pb: { xs: 1, sm: 2 } }}>
+                            São Paulo, Brasil
+                        </Typography>
+                        <Typography color={'#C4C4C4'}>
                             Lorem ipsum risus eleifend phasellus ultricies nibh inceptos imperdiet, 
                             semper blandit aenean aliquam lectus bibendum molestie massa, rutrum porttitor 
-                            ullamcorper vitae ultrices eleifend nibh. nunc semper inceptos duis per suspendisse 
-                            taciti consequat rutrum curabitur platea ligula, ultricies sagittis mollis phasellus 
-                            adipiscing etiam ullamcorper commodo at interdum, posuere mauris duis congue egestas 
-                            dui sodales etiam malesuada habitant. 
-                            auctor feugiat aliquam pulvinar consequat himenaeos velit quisque taciti tincidunt, 
-                            cursus iaculis ligula cubilia eros gravida ornare pretium.  
+                            ullamcorper vitae ultrices eleifend nibh. 
                         </Typography>
                     </Box>  
-                    <Box>
-                        BUTTON
+                    <Box sx={{ pt: { xs: 4, sm: 4 } }}>
+                        icons skills
+                    </Box>
+                    <Box sx={{ 
+                        pt: { xs: 4, sm: 4 }, 
+                        display: 'flex', 
+                        justifyContent: { xs: 'center', sm: 'start' } 
+                    }}>
+                        <ButtonsAboutMe />
                     </Box>
                 </Box>
             </Box>
