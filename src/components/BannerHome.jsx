@@ -21,11 +21,17 @@ export default function BannerHome() {
                         <Typography variant="h3" color='secondary'>GUILHERME SANTOS</Typography>
                         <Typography variant="h6">Desenvolvedor Front-End FullStack</Typography> 
                     </Box>  
-                    <Box sx={{ mt: 5, ml: { sm: 2 }, display: 'flex', justifyContent: { xs: 'center', sm: 'start' } }}>
+                    <Box sx={{ 
+                        mt: { xs: 7, sm: 5 }, 
+                        mb: { xs: 6 },
+                        ml: { sm: 2 }, 
+                        display: 'flex', 
+                        justifyContent: { xs: 'center', sm: 'start' } 
+                    }}>
                         <ButtonsHome />
                     </Box>
                 </Box>
-                <Box>
+                <Box sx={{ display: { xs: 'none', sm: 'flex' } }} >
                     <Animation />    
                 </Box>
             </Box>
