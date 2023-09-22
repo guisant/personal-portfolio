@@ -35,12 +35,12 @@ const theme = createTheme({
 
 
 theme.typography.h6 = {
-  fontSize: '1rem',
+  fontSize: '1.1rem',
   '@media (min-width:600px)': {
     fontSize: '1.3rem',
   },
   [theme.breakpoints.up('md')]: {
-    fontSize: '1.5rem',
+    fontSize: '1.3rem',
   },
 };
 
@@ -50,7 +50,27 @@ theme.typography.h3 = {
     fontSize: '1.3rem',
   },
   [theme.breakpoints.up('md')]: {
-    fontSize: '3.2rem',
+    fontSize: '3.1rem',
+  },
+};
+
+theme.typography.h4 = {
+  fontSize: '1.5rem',
+  '@media (min-width:600px)': {
+    fontSize: '1.3rem',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: '1.3rem',
+  },
+};
+
+theme.typography.h5 = {
+  fontSize: '1rem',
+  '@media (min-width:600px)': {
+    fontSize: '1.3rem',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: '1rem',
   },
 };
 
