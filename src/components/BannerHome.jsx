@@ -7,7 +7,7 @@ import Animation from './Animation';
 
 export default function BannerHome() {
     return (
-            <Box sx={{ 
+            <Box id='bannerHome' sx={{ 
                 display: { xs: 'block', sm: 'block', md: 'flex' }, 
                 alignItems: 'center', 
                 justifyContent: 'space-around', 

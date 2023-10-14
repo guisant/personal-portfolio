@@ -9,14 +9,10 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
 import Logo from './Logo';
+import ListItemDrawer from './ListItemDrawer'
 
 const drawerWidth = 240;
-const navItems = ['Home', 'Sobre mim', 'Experiências', 'Projetos', 'Contato'];
 
 export default function NavAppBar(props) {
 
@@ -33,15 +29,7 @@ export default function NavAppBar(props) {
         <Logo />
       </Typography>
       <Divider />
-      <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
+      <ListItemDrawer />
     </Box>
   );
 
@@ -68,11 +56,21 @@ export default function NavAppBar(props) {
             <Logo />
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' }, pr: 10 }}>
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
-                {item}
+              <Button href="#bannerHome" sx={{ color: '#fff' }}>
+                Home
               </Button>
-            ))}
+              <Button href="#aboutMe" sx={{ color: '#fff' }}>
+                Sobre mim
+              </Button>
+              <Button href="#experiences" sx={{ color: '#fff' }}>
+                Experiências
+              </Button>
+              <Button href="#projects" sx={{ color: '#fff' }}>
+                Projetos
+              </Button>
+              <Button href="#contact" sx={{ color: '#fff' }}>
+                Contato
+              </Button>
           </Box>
         </Toolbar>
       </AppBar>

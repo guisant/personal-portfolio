@@ -9,7 +9,7 @@ import profilePic from '../assets/profile_pic.jpg'
 
 export default function AboutMe() {
     return (
-            <Box sx={{ 
+            <Box id='aboutMe' sx={{ 
                 display: { xs: 'block', sm: 'flex' }, 
                 alignItems: 'center', 
                 justifyContent: 'space-around', 
