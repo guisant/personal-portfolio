@@ -56,19 +56,19 @@ export default function NavAppBar(props) {
             <Logo />
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' }, pr: 10 }}>
-              <Button href="#bannerHome" sx={{ color: '#fff' }}>
+              <Button variant="container" href="#bannerHome" sx={{ color: '#fff' }}>
                 Home
               </Button>
-              <Button href="#aboutMe" sx={{ color: '#fff' }}>
+              <Button variant="container" href="#aboutMe" sx={{ color: '#fff' }}>
                 Sobre mim
               </Button>
-              <Button href="#experiences" sx={{ color: '#fff' }}>
+              <Button variant="container" href="#experience" sx={{ color: '#fff' }}>
                 Experiências
               </Button>
-              <Button href="#projects" sx={{ color: '#fff' }}>
+              <Button variant="container" href="#projects" sx={{ color: '#fff' }}>
                 Projetos
               </Button>
-              <Button href="#contact" sx={{ color: '#fff' }}>
+              <Button variant="container" href="#contact" sx={{ color: '#fff' }}>
                 Contato
               </Button>
           </Box>

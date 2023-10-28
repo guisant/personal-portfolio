@@ -24,7 +24,7 @@ export default function AboutMe() {
                 justifyContent: 'space-around', 
                 backgroundColor: '#151515',
                 pt: { xs: 7, sm: 3 },
-                pb: { xs: 7, sm: 10 }
+                pb: { xs: 7, sm: 12 }
             }}>
                 <Box sx={{ ml: 17, mt: 3, pt: 4, display: { xs: 'none', sm: 'flex' } }}> 
                     <Card sx={{ width: 250 }}>
