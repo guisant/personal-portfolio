@@ -31,6 +31,22 @@ const theme = createTheme({
         main: '#088a5f',
       },
     },
+
+    components: {
+      MuiButton: {
+        variants: [
+          {
+            props: { variant: 'text' },
+            style: {
+              textTransform: 'none',
+              borderLeft: `2px solid #088a5f`,
+              borderRadius: 2,
+              color: '#C4C4C4',
+            },
+          },
+        ],
+      },
+    }
 });
 
 
